@@ -1,4 +1,4 @@
-# UCI Loan/Credit Risk: Simple End-to-End Big Data Project
+#  Loan/Credit Risk: Simple End-to-End Big Data Project
 
 This project is now mapped to a loan/credit classification dataset and runs an end-to-end Spark + ML workflow.
 
