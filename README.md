@@ -1,27 +1,21 @@
 # UCI Loan/Credit Risk: Simple End-to-End Big Data Project
 
-This project is now mapped to a UCI loan/credit classification dataset and runs an end-to-end Spark + ML workflow.
+This project is now mapped to a loan/credit classification dataset and runs an end-to-end Spark + ML workflow.
 
 ## Dataset used
 Primary source (UCI):
-- `https://archive.ics.uci.edu/static/public/27/data.csv`
+- `[https://archive.ics.uci.edu/static/public/27/data.csv](https://microsoft.github.io/r-server-loan-credit-risk/input_data.html)`
 
-Local copy used for reproducible runs:
+Local sample copy used for reproducible runs:
 - `data/raw/uci_credit_approval.csv`
 
-Note:
-- UCI does not currently expose a dataset named exactly `Lending Club Loan Data` via its API.
-- This project uses the closest directly importable UCI loan/credit risk dataset (`Credit Approval`) and follows your requested ingestion style (`pd.read_csv(...)` then `spark.createDataFrame(...)`).
 
 ## Run
 ```bash
 python3 src/run_project.py
 ```
 
-Optional (override remote source URL):
-```bash
-LOAN_DATA_URL="https://archive.ics.uci.edu/static/public/27/data.csv" python3 src/run_project.py
-```
+
 
 ## Generated outputs
 - `data/processed/fact_loans/` (validated parquet, partitioned)
